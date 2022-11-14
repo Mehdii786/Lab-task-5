@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Login {
+
+    public static void main(String[] args) {
+
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print(" Enter user name or email => ");
+            String userName = scanner.nextLine();
+
+            System.out.print(" Enter password => ");
+            String password = scanner.nextLine();
+
+            if ("mehdi@gmail.com".equals(userName) &&
+             "mehdi123".equals(password)) {
+                System.out.println(" User successfully logged-in.. ");
+            } 
+            else if ("nomi@gmail.com".equals(userName) && "nomi123".equals(password)) {
+                System.out.println(" User successfully logged-in.. ");
+            }
+             else if ("hadi@gmail.com".equals(userName) && "hadi123".equals(password)) {
+                System.out.println(" User successfully logged-in.. ");
+            }
+             else if ("ali@gmail.com".equals(userName) && "ali123".equals(password)) {
+                System.out.println(" User successfully logged-in.. ");
+            }
+             else if ("raj@gmail.com".equals(userName) && "raj123".equals(password)) {
+                System.out.println(".. ===>>WELCOME<<=== .. ");
+            }
+            else {
+                System.out.println(" In valid userName oo password ");
+            }
+        }
+    }
+}
